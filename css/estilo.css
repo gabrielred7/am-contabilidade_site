@@ -1,0 +1,155 @@
+   /* CSS Reset 
+    Algumas tags ja veem com algum CSS padrão, o Reset remove isso.
+   */
+   
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-image: url(../img/fundo.jpg);
+    background-size: 100vw 100vh;
+    height: 100%;
+    font-family: Arial;
+    font-size: 12px;
+  }
+  
+  /* breakpoint */
+  @media (min-width: 310px){
+    body{
+      font-size: 8px;
+    }
+  }
+
+  @media (min-width: 350px){
+    body{
+      font-size: 11px;
+    }
+  }
+
+  @media (min-width: 390px){
+    body{
+      font-size: 12px;
+    }
+  }
+
+  @media (min-width: 590px){
+    body{
+      font-size: 16px;
+    }
+  }
+
+  header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  nav.menu{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+  }
+
+  nav.menu ul{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0;
+  }
+  
+  nav.menu li{
+    list-style: none;
+  }
+  
+  nav.menu a {
+    display: block;
+    padding: 10px;
+    
+  }
+  
+  a {
+    text-decoration: none;
+    font-weight: 500;
+    color: teal;
+  }
+  
+  a:hover{
+    color: green;
+    text-decoration: underline;
+  }
+  
+  h2.site-subtitle, 
+  h1.site-title{
+    color: whitesmoke;
+    text-align: center;
+  }
+
+  h1.site-title{
+    font-size: 4em;
+    line-height: 1em;
+  }
+
+  section{
+    color: whitesmoke;
+  }
+  
+  section.serviços{
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 2em;
+    height: 95vh;
+  }
+
+  section.serviços h2{
+    font-size: 2em;
+    margin-bottom: 1.2em;
+  }
+
+  section.serviços .grid{
+    display: grid;
+    gap: 2em;
+  }
+
+  @media (min-width: 560px){
+    .serviços .grid {
+      grid-template-columns: repeat(2, 240px);
+      justify-content: center;
+    }
+  }
+
+  @media (min-width: 860px){
+    .serviços .grid {
+      grid-template-columns: repeat(3, 240px);
+      justify-content: center;
+    }
+  }
+
+  @media (min-width: 1200px){
+    .serviços .grid {
+      grid-template-columns: repeat(4, 300px);
+      justify-content: center;
+      align-content: center;
+      height: calc(95vh - 48px - 13em);
+    }
+  }
+
+  section.serviços figure {
+    text-align: center;
+  }
+
+  section.serviços figcaption {
+    font-size: 1.1em;
+  }
+
+  .img-portfolio{
+    height: 180px;
+    width: 260px;
+    object-fit: left bottom;
+    border-radius: 5px;
+  }
