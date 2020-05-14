@@ -54,6 +54,7 @@
     position: fixed;
     top: 0;
     width: 100vw;
+    z-index: 1;
   }
 
   nav.menu ul{
@@ -71,9 +72,15 @@
   nav.menu a {
     display: block;
     padding: 10px;
-    
+    transition: background-color 800ms, color 800ms;
   }
   
+  nav.menu a:hover{
+    background-color: teal;
+    color: whitesmoke;
+    text-decoration: none;
+  }
+
   a {
     text-decoration: none;
     font-weight: 500;
@@ -92,18 +99,32 @@
   }
 
   h1.site-title{
-    font-size: 4em;
+    font-size: 6em;
     line-height: 1em;
+  }
+
+  .titulos {
+    transform: scale(0.2) translateZ(50vh);
+    opacity: 0;
+    animation: linear 1s animacaoTitulo forwards;
+  }
+
+  @keyframes animacaoTitulo{
+    /*Animação para o estado final*/
+    100% {
+      transform: scale(1) translateZ(0);
+      opacity: 1;
+    }
   }
 
   section{
     color: whitesmoke;
   }
   
-  section.serviços{
+  section.serviços, .contato{
     font-family: 'Josefin Sans', sans-serif;
-    padding: 2em;
-    height: 95vh;
+    padding: 4em;
+    min-height: 100vh;
   }
 
   section.serviços h2{
@@ -147,9 +168,35 @@
     font-size: 1.1em;
   }
 
+  section.contato h2{
+    font-size: 2em;
+    margin-bottom: 1.2em;
+  }
+
+  section.contato a{
+    color: whitesmoke;
+    font-size: 4em;
+  }
+
+  section.contato a:hover{
+    text-decoration: none;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, .5);
+  }
+
+  section.contato .icons{
+    text-align: center;
+  }
+
   .img-portfolio{
     height: 180px;
     width: 260px;
-    object-fit: left bottom;
+    object-fit: cover;
+    object-position: left bottom;
     border-radius: 5px;
+    transition: transform 500ms;
+
+  }
+
+  .img-portfolio:hover{
+    transform: scale(1.3);
   }
