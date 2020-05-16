@@ -11,9 +11,9 @@
 <body>
   <header id="inicio">
     <nav class="menu">
-      <ul>
+      <ul class="container">
         <li><a href="#inicio">INÍCIO</a></li>
-        <li><a href="#">QUEM SOU EU</a></li>
+        <li><a href="#sobre">QUEM SOU EU</a></li>
         <li><a href="#serviços">SERVIÇOS</a></li>
         <li><a href="#contato">CONTATO</a></li>
       </ul>
@@ -23,42 +23,93 @@
       <h2 class="site-subtitle"> Contador </h2>
     </div>
   </header>
-  <section class="serviços" id="serviços">
+  <section class="sobre container" id="sobre">
+    <h2>Quem sou eu</h2>
+    
+    <figure class="profile">
+      <img src="img/foto.jpg" alt="Antonio Mendes">
+    </figure>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ea et sit maxime doloremque alias aut vel aspernatur deserunt ut libero eligendi magnam veniam totam laudantium blanditiis, velit in veritatis.</p>
+
+    <p>Adipisci iusto sed, ipsam aliquid natus enim tenetur ullam eaque dicta dolorem reiciendis, mollitia quibusdam architecto odio doloremque tempora fuga sequi quia? Vitae iusto ex fugiat laboriosam quisquam exercitationem enim.</p>
+
+    <p>At qui tempore ea minus harum suscipit deleniti nihil corporis. Quos, consequuntur. Quas quo ipsam nemo tempora deleniti fugiat quis, suscipit a qui repellendus dignissimos eaque laborum quibusdam voluptas iure.</p>
+
+    <p>Quas velit saepe dignissimos illo quos, molestias atque nisi officiis ipsa amet vitae laudantium fugit sapiente harum blanditiis, adipisci cupiditate quam eos delectus recusandae, id soluta. Non est repellat ex?</p>
+    
+    <!-- 
+    <p>Esse site foi construido durante a <a href="https://www.alura.com.br/artigos/imersao-css">Imersão CSS da Alura </a></p>
+    --> 
+  </section>
+  <section class="serviços container" id="serviços">
     <h2>Serviços</h2>
     <div class="grid">
-      <figure>
-          <img class="img-portfolio" src="img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg" alt="eCommerce">
-          <figcaption>Assessoria Contábil, Fiscal e DP</figcaption>
-      </figure>
-      <figure>
-          <img class="img-portfolio" src="img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
-          <figcaption>Legalização e Baixa de Empresa</figcaption>
-      </figure>
-      <figure>
-          <img class="img-portfolio" src="img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Web design">
-          <figcaption>Imposto de Renda (PF e PJ)</figcaption>
-      </figure>
-      <figure>
-          <img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg" alt="Projetos pessoais">
-          <figcaption>Cálculos em Geral</figcaption>
-      </figure>
+      <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+              <img class="img-portfolio" src="img/image1.jpg" alt="eCommerce">
+          </figure>  
+          <div class="card-back">
+            Assessoria Contábil, Fiscal <br>e DP
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+              <img class="img-portfolio" src="img/image2.jpg" alt="Legalização e Baixa de Empresa">
+          </figure>  
+          <div class="card-back">
+            Legalização e Baixa de Empresa
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+            <img class="img-portfolio" src="img/image3.jpg" alt="Imposto de Renda (PF e PJ)">
+          </figure>  
+          <div class="card-back">
+            Imposto de Renda (PF e PJ)
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+            <img class="img-portfolio" src="img/image5.jpg" alt="Cálculos em Geral">
+          </figure>  
+          <div class="card-back">
+            Cálculos em Geral        
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-  <section class="contato" id="contato">
+  <section class="contato container" id="contato">
     <h2>Contato</h2>
     <div class="grid icons">
-      <a target="_blank" href="https://github.com/vanessametonini">
+      <a target="_blank" href="#">
         <i class="fab fa-facebook-square"></i>      
       </a>
-      <a target="_blank" href="https://twitter.com/vanessametonini">
+      <a target="_blank" href="#">
         <i class="fab fa-instagram"></i>
       </a>
-      <a target="_blank" href="https://linkedin.com/in/vanessametonini">
+      <a target="_blank" href="#">
         <i class="fab fa-linkedin"></i>      
       </a>
-      <a href="mailto:vanessa.tonini@caelum.com.br">Email</a>
     </div>
   </section>
+  <footer>
+    <div class="pe">
+      <p>Desenvolvido por:
+        <a target="_blank" href="https://github.com/gabrielred7"> 
+        Gabriel A. Mendes
+          <i class="fab fa-github"></i>      
+        </a></p>
+    </div>
+  </footer>
 </body>
 </html>
 
